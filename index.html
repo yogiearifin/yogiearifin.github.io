@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+    <script>
+        const showPassword = () => {
+            const ele = document.getElementById("input-password")
+            if (ele.getAttribute("type") === "password") {
+                ele.setAttribute("type", "text")
+            } else {
+                ele.setAttribute("type", "password")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <div class="container-tab-pill">
+        <div class="tab-pill">
+            <p>first tab</p>
+        </div>
+        <div class="tab-pill">
+            <p>second tab</p>
+        </div>
+        <div class="tab-pill tab-pill-active">
+            <p>third tab</p>
+        </div>
+    </div>
+    <div class="labels">
+        <label>Hello World</label>
+        <label>Hi</label>
+        <label>Hola</label>
+        <label>Ahoy</label>
+        <p>ajaib</p>
+        <p>nakal</p>
+        <ul>
+            <li>test</li>
+            <li>list</li>
+        </ul>
+    </div> -->
+    <form class="form-index">
+        <fieldset>
+            <a href="https://www.google.com" target="_blank norel noreferrer">
+                <legend>Contact us</legend>
+            </a>
+            <div>
+                <label>Name</label>
+            </div>
+            <div>
+                <input type="text" placeholder="input your name">
+            </div>
+            <div>
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="text" placeholder="input your email">
+            </div>
+            <div>
+                <label>Password</label>
+            </div>
+            <div>
+                <input type="password" placeholder="input your password" id="input-password">
+                <button onclick="showPassword()" type="button">show password</button>
+            </div>
+            <div>
+                <label>City</label>
+            </div>
+            <div>
+                <input list="city-list" type="text" placeholder="enter your city">
+                <datalist id="city-list">
+                    <option value="Jakarta">
+                    <option value="Bandung">
+                    <option value="Surabaya">
+                    <option value="Sumbawa">
+                    <option value="Bekasi">
+                </datalist>
+            </div>
+            <div>
+                <label>Birthday</label>
+            </div>
+            <div>
+                <input type="date">
+            </div>
+            <div>
+                <label>Child Number</label>
+            </div>
+            <div>
+                <input type="number">
+            </div>
+            <div>
+                <label>Phone Number</label>
+            </div>
+            <div>
+                <input type="tel">
+            </div>
+            <div>
+                <label>Upload your photo</label>
+            </div>
+            <div>
+                <input type="file">
+            </div>
+            <div>
+                <label>Message</label>
+            </div>
+            <div>
+                <textarea></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="button">Clear</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

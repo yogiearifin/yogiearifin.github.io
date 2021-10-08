@@ -1,0 +1,64 @@
+.form-index button {
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+}
+
+.form-index button:hover {
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.labels label:first-child {
+  color: red;
+}
+
+.labels label:last-child {
+  color: blue;
+}
+
+.labels p::before {
+  content: "anak ";
+  color: red;
+}
+
+.labels p::after {
+  content: " sugoi";
+  color: blue;
+}
+
+.container-tab-pill {
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+  border-radius: 25px;
+}
+
+.tab-pill {
+  color: black;
+  width: 100%;
+  padding: 0 10vw;
+}
+
+.tab-pill-active {
+  background-color: blue;
+  color: white;
+}
+
+.tab-pill:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.tab-pill:last-child {
+  border-radius: 0 25px 25px 0;
+}
